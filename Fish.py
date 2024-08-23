@@ -9,7 +9,7 @@ top_10_countries = pd.Series()
 
 # Define credentials
 USERNAME = 'Kelvin'
-PASSWORD = 'Alex'
+PASSWORD = 'Skibidi'
 
 #----Setup dataframe----#
 def load_data():
@@ -62,6 +62,8 @@ def showCharts():
         title='Tonnes of Seafood Caught by Country'
     )
     plt.show()
+
+fish_data_df.to_csv("/Fish/FIsh-data-anaylisis/new_fish_data.csv", index = False)
 
 def isolate_country_data(df, country_name):
    
